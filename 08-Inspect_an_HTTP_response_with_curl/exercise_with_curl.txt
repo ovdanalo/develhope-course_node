@@ -1,0 +1,2 @@
+the content type extracted from the response header of this URL: https://jsonplaceholder.typicode.com/posts/1/comments
+is content-type: application/json; charset=utf-8

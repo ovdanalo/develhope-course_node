@@ -1,0 +1,16 @@
+{
+  "name": "09-a_test-driven_http_response",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
