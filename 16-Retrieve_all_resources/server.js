@@ -1,11 +1,16 @@
 const express = require('express');
 require('dotenv').config();
+const { PrismaClient } = require('@prisma/client');
 
 const app = express();
 const port = process.env.PORT;
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello, world!' });
+const prisma = new PrismaClient();
+
+app.get('/planets', async (req, res) => {
+  const planets = await prisma.planet.findMany();
+
+  res.json(planets);
 });
 
 app.listen(port, () => {
